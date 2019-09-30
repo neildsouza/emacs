@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("helloworldmain" package nil nil [1 24])
+            ("javafx.application.Application" include nil nil [26 64])
+            ("javafx.event.ActionEvent" include nil nil [65 97])
+            ("javafx.event.EventHandler" include nil nil [98 131])
+            ("javafx.scene.Group" include nil nil [132 158])
+            ("javafx.scene.Scene" include nil nil [159 185])
+            ("javafx.scene.control.Button" include nil nil [186 221])
+            ("javafx.stage.Stage" include nil nil [222 248])
+            ("HelloWorldMain" type
+               (:typemodifiers ("public")
+                :superclasses "Application"
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [329 342]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [305 378])
+                    ("start" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("primaryStage" variable (:type "Stage") (reparse-symbol formal_parameters) [416 434]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [398 916]))                  
+                :type "class")
+                nil [250 918]))          
+      :file "HelloWorldMain.java"
+      :pointmax 919
+      :fsize 918
+      :lastmodtime '(22922 61916 746764 520000)
+      :unmatched-syntax nil))
+  :file "!home!neil!programs!java_progs!javafx8_intro_by_example_2nd_ed!helloworld!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

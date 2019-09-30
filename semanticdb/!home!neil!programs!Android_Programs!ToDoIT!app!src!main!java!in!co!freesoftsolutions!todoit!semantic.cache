@@ -1,0 +1,201 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("in.co.freesoftsolutions.todoit" package nil nil [1 40])
+            ("android.app.Activity" include nil nil [42 70])
+            ("android.content.Intent" include nil nil [71 101])
+            ("android.graphics.Color" include nil nil [102 132])
+            ("android.graphics.Typeface" include nil nil [133 166])
+            ("android.os.Bundle" include nil nil [167 192])
+            ("android.support.v4.app.Fragment" include nil nil [193 232])
+            ("android.support.v4.app.FragmentManager" include nil nil [233 279])
+            ("android.support.v7.widget.LinearLayoutManager" include nil nil [280 333])
+            ("android.support.v7.widget.RecyclerView" include nil nil [334 380])
+            ("android.support.v7.widget.helper.ItemTouchHelper" include nil nil [381 437])
+            ("android.view.LayoutInflater" include nil nil [438 473])
+            ("android.view.Menu" include nil nil [474 499])
+            ("android.view.MenuInflater" include nil nil [500 533])
+            ("android.view.MenuItem" include nil nil [534 563])
+            ("android.view.View" include nil nil [564 589])
+            ("android.view.ViewGroup" include nil nil [590 620])
+            ("android.widget.TextView" include nil nil [621 652])
+            ("com.loopj.android.http.JsonHttpResponseHandler" include nil nil [654 708])
+            ("org.json.JSONArray" include nil nil [710 736])
+            ("org.json.JSONException" include nil nil [737 767])
+            ("org.json.JSONObject" include nil nil [768 795])
+            ("java.io.UnsupportedEncodingException" include nil nil [797 841])
+            ("java.text.SimpleDateFormat" include nil nil [842 876])
+            ("java.util.Calendar" include nil nil [877 903])
+            ("java.util.Date" include nil nil [904 926])
+            ("java.util.List" include nil nil [927 949])
+            ("cz.msebera.android.httpclient.Header" include nil nil [951 995])
+            ("cz.msebera.android.httpclient.entity.StringEntity" include nil nil [996 1053])
+            ("ToDoListFragment" type
+               (:typemodifiers ("public")
+                :superclasses "Fragment"
+                :members 
+                  ( ("recyclerView" variable
+                       (:typemodifiers ("private")
+                        :type "RecyclerView")
+                        (reparse-symbol class_member_declaration) [1109 1143])
+                    ("adapter" variable
+                       (:typemodifiers ("private")
+                        :type "ToDoAdapter")
+                        (reparse-symbol class_member_declaration) [1148 1176])
+                    ("day" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1181 1197])
+                    ("month" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1202 1220])
+                    ("year" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1225 1242])
+                    ("date" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1247 1267])
+                    ("REQUEST_TASK" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1272 1314])
+                    ("tf" variable
+                       (:typemodifiers ("private")
+                        :type "Typeface")
+                        (reparse-symbol class_member_declaration) [1319 1339])
+                    ("onCreate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("savedInstanceState" variable (:type "Bundle") (reparse-symbol formal_parameters) [1380 1405]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1359 1956])
+                    ("onCreateView" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("inflater" variable (:type "LayoutInflater") (reparse-symbol formal_parameters) [2001 2024])
+                            ("container" variable (:type "ViewGroup") (reparse-symbol formal_parameters) [2026 2045])
+                            ("savedInstanceState" variable (:type "Bundle") (reparse-symbol formal_parameters) [2076 2101]))                          
+                        :type "View")
+                        (reparse-symbol class_member_declaration) [1976 2410])
+                    ("onCreateOptionsMenu" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("menu" variable (:type "Menu") (reparse-symbol formal_parameters) [2462 2471])
+                            ("inflater" variable (:type "MenuInflater") (reparse-symbol formal_parameters) [2473 2494]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2430 2651])
+                    ("onOptionsItemSelected" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("item" variable (:type "MenuItem") (reparse-symbol formal_parameters) [2708 2721]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2671 3177])
+                    ("onActivityResult" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("requestCode" variable (:type "int") (reparse-symbol formal_parameters) [3226 3241])
+                            ("resultCode" variable (:type "int") (reparse-symbol formal_parameters) [3243 3257])
+                            ("data" variable (:type "Intent") (reparse-symbol formal_parameters) [3259 3270]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3197 3670])
+                    ("setTaskForDate" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("text" variable (:type "String") (reparse-symbol formal_parameters) [3704 3715]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3676 5663])
+                    ("getToDoListForDate" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5669 7192])
+                    ("updateUI" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("array" variable (:type "JSONArray") (reparse-symbol formal_parameters) [7220 7235]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7198 7616])
+                    ("ToDoHolder" type
+                       (:typemodifiers ("private")
+                        :interfaces ("View.OnClickListener")
+                        :superclasses "RecyclerView.ViewHolder"
+                        :members 
+                          ( ("titleTextView" variable
+                               (:typemodifiers ("private")
+                                :type "TextView")
+                                (reparse-symbol class_member_declaration) [7741 7772])
+                            ("todoItem" variable
+                               (:typemodifiers ("private")
+                                :type "ToDoItem")
+                                (reparse-symbol class_member_declaration) [7781 7807])
+                            ("ToDoHolder" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("itemView" variable
+                                       (:typemodifiers ("final")
+                                        :type "View")
+                                        (reparse-symbol formal_parameters) [7835 7854]))                                  )
+                                (reparse-symbol class_member_declaration) [7817 8025])
+                            ("bindToDoItem" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("t" variable (:type "ToDoItem") (reparse-symbol formal_parameters) [8060 8070]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [8035 8416])
+                            ("onClick" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("v" variable (:type "View") (reparse-symbol formal_parameters) [8464 8470]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [8444 8897]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [7622 8903])
+                    ("ToDoTouchHelper" type
+                       (:typemodifiers ("public")
+                        :superclasses "ItemTouchHelper.SimpleCallback"
+                        :members 
+                          ( ("todoAdapter" variable
+                               (:typemodifiers ("private")
+                                :type "ToDoAdapter")
+                                (reparse-symbol class_member_declaration) [12627 12659])
+                            ("ToDoTouchHelper" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("movieAdapter" variable (:type "ToDoAdapter") (reparse-symbol formal_parameters) [12692 12716]))                                  )
+                                (reparse-symbol class_member_declaration) [12669 12858])
+                            ("onMove" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("recyclerView" variable (:type "RecyclerView") (reparse-symbol formal_parameters) [12908 12933])
+                                    ("viewHolder" variable (:type "RecyclerView.ViewHolder") (reparse-symbol formal_parameters) [12935 12969])
+                                    ("target" variable (:type "RecyclerView.ViewHolder") (reparse-symbol formal_parameters) [12971 13001]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [12886 13081])
+                            ("onSwiped" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("viewHolder" variable (:type "RecyclerView.ViewHolder") (reparse-symbol formal_parameters) [13130 13164])
+                                    ("direction" variable (:type "int") (reparse-symbol formal_parameters) [13166 13179]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [13109 13257]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [12549 13263]))                  
+                :type "class")
+                nil [1056 13265]))          
+      :file "ToDoListFragment.java"
+      :pointmax 13266
+      :fsize 13265
+      :lastmodtime '(22350 53082 753407 274000)
+      :unmatched-syntax '((GT 8974 . 8975) (PRIVATE 8909 . 8916) (LT 8963 . 8964))))
+  :file "!home!neil!programs!Android_Programs!ToDoIT!app!src!main!java!in!co!freesoftsolutions!todoit!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

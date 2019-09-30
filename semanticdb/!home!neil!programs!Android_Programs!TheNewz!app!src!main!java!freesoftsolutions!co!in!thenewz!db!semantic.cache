@@ -1,0 +1,125 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("freesoftsolutions.co.in.thenewz.db" package nil nil [1 44])
+            ("android.database.Cursor" include nil nil [46 77])
+            ("android.database.CursorWrapper" include nil nil [78 116])
+            ("java.util.UUID" include nil nil [118 140])
+            ("freesoftsolutions.co.in.thenewz.db.RSSFeedsSchema.RSSFeedsTable" include nil nil [142 213])
+            ("freesoftsolutions.co.in.thenewz.model.RSSFeed" include nil nil [214 267])
+            ("RSSFeedCursorWrapper" type
+               (:typemodifiers ("public")
+                :superclasses "CursorWrapper"
+                :members 
+                  ( ("RSSFeedCursorWrapper" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cursor" variable (:type "Cursor") (reparse-symbol formal_parameters) [359 372]))                          )
+                        (reparse-symbol class_member_declaration) [331 404])
+                    ("getRSSFeed" function
+                       (:typemodifiers ("public")
+                        :type "RSSFeed")
+                        (reparse-symbol class_member_declaration) [410 837]))                  
+                :type "class")
+                nil [269 839]))          
+      :file "RSSFeedCursorWrapper.java"
+      :pointmax 840
+      :fsize 839
+      :lastmodtime '(22989 61711 242797 115000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("freesoftsolutions.co.in.thenewz.db" package nil nil [1 44])
+            ("android.content.Context" include nil nil [46 77])
+            ("android.database.sqlite.SQLiteDatabase" include nil nil [78 124])
+            ("android.database.sqlite.SQLiteOpenHelper" include nil nil [125 173])
+            ("freesoftsolutions.co.in.thenewz.db.RSSFeedsSchema.RSSFeedsTable" include nil nil [175 246])
+            ("RSSFeedsOpenHelper" type
+               (:typemodifiers ("public" "final")
+                :superclasses "SQLiteOpenHelper"
+                :members 
+                  ( ("VERSION" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [317 354])
+                    ("DB_NAME" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [359 419])
+                    ("RSSFeedsOpenHelper" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("context" variable (:type "Context") (reparse-symbol formal_parameters) [451 466]))                          )
+                        (reparse-symbol class_member_declaration) [425 523])
+                    ("onCreate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sqLiteDatabase" variable (:type "SQLiteDatabase") (reparse-symbol formal_parameters) [564 593]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [543 870])
+                    ("onUpgrade" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("sqLiteDatabase" variable (:type "SQLiteDatabase") (reparse-symbol formal_parameters) [912 941])
+                            ("oldVersion" variable (:type "int") (reparse-symbol formal_parameters) [943 957])
+                            ("newVersion" variable (:type "int") (reparse-symbol formal_parameters) [959 973]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [890 1002]))                  
+                :type "class")
+                nil [248 1004]))          
+      :file "RSSFeedsOpenHelper.java"
+      :pointmax 1005
+      :fsize 1004
+      :lastmodtime '(22988 50438 850999 747000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("freesoftsolutions.co.in.thenewz.db" package nil nil [1 44])
+            ("RSSFeedsSchema" type
+               (:typemodifiers ("public" "final")
+                :members 
+                  ( ("RSSFeedsTable" type
+                       (:typemodifiers ("public" "static" "final")
+                        :members 
+                          ( ("NAME" variable
+                               (:typemodifiers ("public" "static" "final")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [136 182])
+                            ("Cols" type
+                               (:typemodifiers ("public" "static" "final")
+                                :members 
+                                  ( ("UUID" variable
+                                       (:typemodifiers ("public" "static" "final")
+                                        :type "String")
+                                        (reparse-symbol class_member_declaration) [237 278])
+                                    ("CHANNEL" variable
+                                       (:typemodifiers ("public" "static" "final")
+                                        :type "String")
+                                        (reparse-symbol class_member_declaration) [291 338])
+                                    ("URL" variable
+                                       (:typemodifiers ("public" "static" "final")
+                                        :type "String")
+                                        (reparse-symbol class_member_declaration) [351 390]))                                  
+                                :type "class")
+                                (reparse-symbol class_member_declaration) [192 400]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [86 406]))                  
+                :type "class")
+                nil [46 408]))          
+      :file "RSSFeedsSchema.java"
+      :pointmax 409
+      :fsize 408
+      :lastmodtime '(22988 49589 774551 473000)
+      :unmatched-syntax nil))
+  :file "!home!neil!programs!Android_Programs!TheNewz!app!src!main!java!freesoftsolutions!co!in!thenewz!db!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

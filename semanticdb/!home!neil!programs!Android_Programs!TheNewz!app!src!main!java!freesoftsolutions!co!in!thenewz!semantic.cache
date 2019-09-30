@@ -1,0 +1,399 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("freesoftsolutions.co.in.thenewz" package nil nil [1 41])
+            ("android.app.Activity" include nil nil [43 71])
+            ("android.content.Intent" include nil nil [72 102])
+            ("android.os.Bundle" include nil nil [103 128])
+            ("android.support.v4.app.Fragment" include nil nil [129 168])
+            ("android.support.v4.app.FragmentManager" include nil nil [169 215])
+            ("android.support.v7.widget.LinearLayoutManager" include nil nil [216 269])
+            ("android.support.v7.widget.RecyclerView" include nil nil [270 316])
+            ("android.support.v7.widget.helper.ItemTouchHelper" include nil nil [317 373])
+            ("android.util.Log" include nil nil [374 398])
+            ("android.view.LayoutInflater" include nil nil [399 434])
+            ("android.view.Menu" include nil nil [435 460])
+            ("android.view.MenuInflater" include nil nil [461 494])
+            ("android.view.MenuItem" include nil nil [495 524])
+            ("android.view.View" include nil nil [525 550])
+            ("android.view.ViewGroup" include nil nil [551 581])
+            ("android.widget.TextView" include nil nil [582 613])
+            ("java.util.List" include nil nil [615 637])
+            ("freesoftsolutions.co.in.thenewz.model.RSSFeed" include nil nil [639 692])
+            ("freesoftsolutions.co.in.thenewz.model.RSSFeeds" include nil nil [693 747])
+            ("RSSFeedsFragment" type
+               (:typemodifiers ("public")
+                :superclasses "Fragment"
+                :members 
+                  ( ("DIALOG_ADD_RSS_FEED" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [802 871])
+                    ("REQUEST_ADD_RSS_FEED" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [876 926])
+                    ("mAdapter" variable
+                       (:typemodifiers ("private")
+                        :type "RSSFeedsAdapter")
+                        (reparse-symbol class_member_declaration) [932 965])
+                    ("mRecyclerView" variable
+                       (:typemodifiers ("private")
+                        :type "RecyclerView")
+                        (reparse-symbol class_member_declaration) [970 1005])
+                    ("onCreate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("savedInstanceState" variable (:type "Bundle") (reparse-symbol formal_parameters) [1046 1071]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1025 1157])
+                    ("onCreateView" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("inflater" variable (:type "LayoutInflater") (reparse-symbol formal_parameters) [1202 1225])
+                            ("container" variable (:type "ViewGroup") (reparse-symbol formal_parameters) [1256 1275])
+                            ("savedInstanceState" variable (:type "Bundle") (reparse-symbol formal_parameters) [1306 1331]))                          
+                        :type "View")
+                        (reparse-symbol class_member_declaration) [1177 1622])
+                    ("onActivityResult" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("requestCode" variable (:type "int") (reparse-symbol formal_parameters) [1671 1686])
+                            ("resultCode" variable (:type "int") (reparse-symbol formal_parameters) [1688 1702])
+                            ("data" variable (:type "Intent") (reparse-symbol formal_parameters) [1704 1715]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1642 2005])
+                    ("onResume" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2025 2101])
+                    ("onCreateOptionsMenu" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("menu" variable (:type "Menu") (reparse-symbol formal_parameters) [2153 2162])
+                            ("inflater" variable (:type "MenuInflater") (reparse-symbol formal_parameters) [2164 2185]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2121 2301])
+                    ("onOptionsItemSelected" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("item" variable (:type "MenuItem") (reparse-symbol formal_parameters) [2358 2371]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2321 2870])
+                    ("RSSFeedHolder" type
+                       (:typemodifiers ("private")
+                        :interfaces ("View.OnClickListener")
+                        :superclasses "RecyclerView.ViewHolder"
+                        :members 
+                          ( ("mRSSFeed" variable
+                               (:typemodifiers ("private")
+                                :type "RSSFeed")
+                                (reparse-symbol class_member_declaration) [3010 3035])
+                            ("mChannel" variable
+                               (:typemodifiers ("private")
+                                :type "TextView")
+                                (reparse-symbol class_member_declaration) [3044 3070])
+                            ("mUrl" variable
+                               (:typemodifiers ("private")
+                                :type "TextView")
+                                (reparse-symbol class_member_declaration) [3079 3101])
+                            ("RSSFeedHolder" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("itemView" variable (:type "View") (reparse-symbol formal_parameters) [3125 3138]))                                  )
+                                (reparse-symbol class_member_declaration) [3111 3379])
+                            ("bindRssFeed" function
+                               (:arguments 
+                                  ( ("rssFeed" variable (:type "RSSFeed") (reparse-symbol formal_parameters) [3406 3421]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [3389 3564])
+                            ("onClick" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("view" variable (:type "View") (reparse-symbol formal_parameters) [3612 3621]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [3592 3750]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [2876 3756])
+                    ("updateUI" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4907 5503])
+                    ("RSSFeedsTouchHelper" type
+                       (:typemodifiers ("private")
+                        :superclasses "ItemTouchHelper.SimpleCallback"
+                        :members 
+                          ( ("RSSFeedsTouchHelper" function (:constructor-flag t) (reparse-symbol class_member_declaration) [5592 5709])
+                            ("onMove" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("recyclerView" variable (:type "RecyclerView") (reparse-symbol formal_parameters) [5759 5784])
+                                    ("viewHolder" variable (:type "RecyclerView.ViewHolder") (reparse-symbol formal_parameters) [5786 5820])
+                                    ("target" variable (:type "RecyclerView.ViewHolder") (reparse-symbol formal_parameters) [5822 5852]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [5737 5932])
+                            ("onSwiped" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("viewHolder" variable (:type "RecyclerView.ViewHolder") (reparse-symbol formal_parameters) [5981 6015])
+                                    ("direction" variable (:type "int") (reparse-symbol formal_parameters) [6017 6030]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [5960 6105]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [5509 6111]))                  
+                :type "class")
+                nil [749 6113]))          
+      :file "RSSFeedsFragment.java"
+      :pointmax 6114
+      :fsize 6113
+      :lastmodtime '(22995 19672 165001 678000)
+      :unmatched-syntax '((GT 3834 . 3835) (PRIVATE 3762 . 3769) (LT 3820 . 3821) (GT 3834 . 3835) (PRIVATE 3762 . 3769) (LT 3820 . 3821)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("freesoftsolutions.co.in.thenewz" package nil nil [1 41])
+            ("android.app.Activity" include nil nil [43 71])
+            ("android.app.Dialog" include nil nil [72 98])
+            ("android.content.DialogInterface" include nil nil [99 138])
+            ("android.content.Intent" include nil nil [139 169])
+            ("android.os.Bundle" include nil nil [170 195])
+            ("android.support.annotation.NonNull" include nil nil [196 238])
+            ("android.support.v4.app.DialogFragment" include nil nil [239 284])
+            ("android.support.v7.app.AlertDialog" include nil nil [285 327])
+            ("android.view.LayoutInflater" include nil nil [328 363])
+            ("android.view.View" include nil nil [364 389])
+            ("android.widget.EditText" include nil nil [390 421])
+            ("freesoftsolutions.co.in.thenewz.model.RSSFeed" include nil nil [423 476])
+            ("freesoftsolutions.co.in.thenewz.model.RSSFeeds" include nil nil [477 531])
+            ("RSSFeedDialog" type
+               (:typemodifiers ("public")
+                :superclasses "DialogFragment"
+                :members 
+                  ( ("EXTRA_FEED_ADDED" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [589 705])
+                    ("onCreateDialog" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("savedInstanceState" variable (:type "Bundle") (reparse-symbol formal_parameters) [767 792]))                          
+                        :type "Dialog")
+                        (reparse-symbol class_member_declaration) [738 1813])
+                    ("createRSSFeed" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("channelText" variable (:type "String") (reparse-symbol formal_parameters) [1846 1864])
+                            ("urlText" variable (:type "String") (reparse-symbol formal_parameters) [1866 1880]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1819 2436]))                  
+                :type "class")
+                nil [533 2438]))          
+      :file "RSSFeedDialog.java"
+      :pointmax 2439
+      :fsize 2438
+      :lastmodtime '(22990 24106 262446 531000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("freesoftsolutions.co.in.thenewz" package nil nil [1 41])
+            ("android.content.Intent" include nil nil [43 73])
+            ("android.net.Uri" include nil nil [74 97])
+            ("android.os.Bundle" include nil nil [98 123])
+            ("android.support.annotation.Nullable" include nil nil [124 167])
+            ("android.support.v4.app.Fragment" include nil nil [168 207])
+            ("android.support.v7.widget.LinearLayoutManager" include nil nil [208 261])
+            ("android.support.v7.widget.RecyclerView" include nil nil [262 308])
+            ("android.view.LayoutInflater" include nil nil [309 344])
+            ("android.view.View" include nil nil [345 370])
+            ("android.view.ViewGroup" include nil nil [371 401])
+            ("android.widget.TextView" include nil nil [402 433])
+            ("com.prof.rssparser.Article" include nil nil [435 469])
+            ("com.prof.rssparser.Parser" include nil nil [470 503])
+            ("java.util.ArrayList" include nil nil [505 532])
+            ("java.util.UUID" include nil nil [533 555])
+            ("freesoftsolutions.co.in.thenewz.model.RSSFeed" include nil nil [557 610])
+            ("freesoftsolutions.co.in.thenewz.model.RSSFeeds" include nil nil [611 665])
+            ("RSSFeedFragment" type
+               (:typemodifiers ("public")
+                :superclasses "Fragment"
+                :members 
+                  ( ("ARG_UUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [719 765])
+                    ("mRSSFeed" variable
+                       (:typemodifiers ("private")
+                        :type "RSSFeed")
+                        (reparse-symbol class_member_declaration) [771 796])
+                    ("mRecyclerView" variable
+                       (:typemodifiers ("private")
+                        :type "RecyclerView")
+                        (reparse-symbol class_member_declaration) [801 836])
+                    ("mAdapter" variable
+                       (:typemodifiers ("private")
+                        :type "ArticleAdapter")
+                        (reparse-symbol class_member_declaration) [841 873])
+                    ("newInstance" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("uuid" variable (:type "UUID") (reparse-symbol formal_parameters) [921 930]))                          
+                        :type "RSSFeedFragment")
+                        (reparse-symbol class_member_declaration) [879 1164])
+                    ("onCreate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "savedInstanceState") (reparse-symbol formal_parameters) [1222 1240]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1184 1427])
+                    ("onCreateView" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("inflater" variable (:type "LayoutInflater") (reparse-symbol formal_parameters) [1486 1509])
+                            ("" variable (:type "container") (reparse-symbol formal_parameters) [1560 1569])
+                            ("" variable (:type "savedInstanceState") (reparse-symbol formal_parameters) [1617 1635]))                          
+                        :type "View")
+                        (reparse-symbol class_member_declaration) [1461 1924])
+                    ("ArticleHolder" type
+                       (:typemodifiers ("private")
+                        :interfaces ("View.OnClickListener")
+                        :superclasses "RecyclerView.ViewHolder"
+                        :members 
+                          ( ("mArticle" variable
+                               (:typemodifiers ("private")
+                                :type "Article")
+                                (reparse-symbol class_member_declaration) [2061 2086])
+                            ("mTitleTextView" variable
+                               (:typemodifiers ("private")
+                                :type "TextView")
+                                (reparse-symbol class_member_declaration) [2095 2127])
+                            ("ArticleHolder" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("itemView" variable (:type "View") (reparse-symbol formal_parameters) [2151 2164]))                                  )
+                                (reparse-symbol class_member_declaration) [2137 2337])
+                            ("bindViewHolder" function
+                               (:arguments 
+                                  ( ("article" variable (:type "Article") (reparse-symbol formal_parameters) [2367 2382]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [2347 2483])
+                            ("onClick" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("view" variable (:type "View") (reparse-symbol formal_parameters) [2531 2540]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [2511 2817]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [1930 2823])
+                    ("updateUI" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3637 4264]))                  
+                :type "class")
+                nil [667 4266]))          
+      :file "RSSFeedFragment.java"
+      :pointmax 4267
+      :fsize 4266
+      :lastmodtime '(22995 48737 684436 177000)
+      :unmatched-syntax '((GT 2900 . 2901) (PRIVATE 2829 . 2836) (LT 2886 . 2887)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("freesoftsolutions.co.in.thenewz" package nil nil [1 41])
+            ("android.content.Context" include nil nil [43 74])
+            ("android.content.Intent" include nil nil [75 105])
+            ("android.os.Bundle" include nil nil [106 131])
+            ("android.support.v4.app.Fragment" include nil nil [132 171])
+            ("android.support.v4.app.FragmentManager" include nil nil [172 218])
+            ("android.support.v4.app.FragmentStatePagerAdapter" include nil nil [219 275])
+            ("android.support.v4.view.ViewPager" include nil nil [276 317])
+            ("android.support.v7.app.AppCompatActivity" include nil nil [318 366])
+            ("java.util.List" include nil nil [368 390])
+            ("java.util.UUID" include nil nil [391 413])
+            ("freesoftsolutions.co.in.thenewz.model.RSSFeed" include nil nil [415 468])
+            ("freesoftsolutions.co.in.thenewz.model.RSSFeeds" include nil nil [469 523])
+            ("RSSPagerActivity" type
+               (:typemodifiers ("public")
+                :superclasses "AppCompatActivity"
+                :members 
+                  ( ("EXTRA_RSS_UUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [587 704])
+                    ("newIntent" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("context" variable (:type "Context") (reparse-symbol formal_parameters) [779 794])
+                            ("rssUUID" variable (:type "UUID") (reparse-symbol formal_parameters) [796 808]))                          
+                        :type "Intent")
+                        (reparse-symbol class_member_declaration) [748 944])
+                    ("onCreate" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("savedInstanceState" variable (:type "Bundle") (reparse-symbol formal_parameters) [988 1013]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [964 2814]))                  
+                :type "class")
+                nil [525 2816]))          
+      :file "RSSPagerActivity.java"
+      :pointmax 2817
+      :fsize 2816
+      :lastmodtime '(23000 27488 298276 561000)
+      :unmatched-syntax '((SEMICOLON 741 . 742) (GT 730 . 731) (PRIVATE 710 . 717) (LT 722 . 723)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("freesoftsolutions.co.in.thenewz" package nil nil [1 41])
+            ("android.support.v4.app.Fragment" include nil nil [43 82])
+            ("RSSFeedsActivity" type
+               (:typemodifiers ("public")
+                :superclasses "SingleFragmentActivity"
+                :members 
+                  ( ("createFragment" function
+                       (:typemodifiers ("protected")
+                        :type "Fragment")
+                        (reparse-symbol class_member_declaration) [165 247]))                  
+                :type "class")
+                nil [84 249]))          
+      :file "RSSFeedsActivity.java"
+      :pointmax 250
+      :fsize 249
+      :lastmodtime '(22988 54199 38065 884000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("freesoftsolutions.co.in.thenewz" package nil nil [1 41])
+            ("android.support.v4.app.Fragment" include nil nil [43 82])
+            ("android.support.v4.app.FragmentManager" include nil nil [83 129])
+            ("android.support.v7.app.AppCompatActivity" include nil nil [130 178])
+            ("android.os.Bundle" include nil nil [179 204])
+            ("SingleFragmentActivity" type
+               (:typemodifiers ("public" "abstract")
+                :superclasses "AppCompatActivity"
+                :members 
+                  ( ("createFragment" function
+                       (:typemodifiers ("protected" "abstract")
+                        :type "Fragment")
+                        (reparse-symbol class_member_declaration) [283 328])
+                    ("onCreate" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("savedInstanceState" variable (:type "Bundle") (reparse-symbol formal_parameters) [372 397]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [348 851]))                  
+                :type "class")
+                nil [206 853]))          
+      :file "SingleFragmentActivity.java"
+      :pointmax 854
+      :fsize 853
+      :lastmodtime '(22988 54667 433898 154000)
+      :unmatched-syntax nil))
+  :file "!home!neil!programs!Android_Programs!TheNewz!app!src!main!java!freesoftsolutions!co!in!thenewz!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

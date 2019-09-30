@@ -1,0 +1,162 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("freesoftsolutions.co.in.thenewz.model" package nil nil [1 47])
+            ("java.util.UUID" include nil nil [49 71])
+            ("RSSFeed" type
+               (:typemodifiers ("public" "final")
+                :members 
+                  ( ("mUUID" variable
+                       (:typemodifiers ("private")
+                        :type "UUID")
+                        (reparse-symbol class_member_declaration) [106 125])
+                    ("mChannel" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [130 154])
+                    ("mUrl" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [159 179])
+                    ("RSSFeed" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [185 242])
+                    ("RSSFeed" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("uuid" variable (:type "UUID") (reparse-symbol formal_parameters) [263 272]))                          )
+                        (reparse-symbol class_member_declaration) [248 303])
+                    ("getUUID" function
+                       (:typemodifiers ("public")
+                        :type "UUID")
+                        (reparse-symbol class_member_declaration) [309 360])
+                    ("getChannel" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [366 425])
+                    ("setChannel" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("channel" variable (:type "String") (reparse-symbol formal_parameters) [454 468]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [431 505])
+                    ("getUrl" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [511 562])
+                    ("setUrl" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable (:type "String") (reparse-symbol formal_parameters) [587 597]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [568 626])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [632 786]))                  
+                :type "class")
+                nil [73 788]))          
+      :file "RSSFeed.java"
+      :pointmax 789
+      :fsize 788
+      :lastmodtime '(22990 3540 745801 692000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("freesoftsolutions.co.in.thenewz.model" package nil nil [1 47])
+            ("android.content.ContentValues" include nil nil [49 86])
+            ("android.content.Context" include nil nil [87 118])
+            ("android.database.Cursor" include nil nil [119 150])
+            ("android.database.sqlite.SQLiteDatabase" include nil nil [151 197])
+            ("android.util.Log" include nil nil [198 222])
+            ("java.util.ArrayList" include nil nil [224 251])
+            ("java.util.List" include nil nil [252 274])
+            ("java.util.UUID" include nil nil [275 297])
+            ("freesoftsolutions.co.in.thenewz.db.*" include nil nil [299 343])
+            ("freesoftsolutions.co.in.thenewz.db.RSSFeedsSchema.RSSFeedsTable" include nil nil [344 415])
+            ("RSSFeeds" type
+               (:typemodifiers ("public" "final")
+                :members 
+                  ( ("sRSSFeeds" variable
+                       (:typemodifiers ("private" "static")
+                        :type "RSSFeeds")
+                        (reparse-symbol class_member_declaration) [451 485])
+                    ("mContext" variable
+                       (:typemodifiers ("private")
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [490 515])
+                    ("mDatabase" variable
+                       (:typemodifiers ("private")
+                        :type "SQLiteDatabase")
+                        (reparse-symbol class_member_declaration) [520 553])
+                    ("RSSFeeds" function
+                       (:constructor-flag t
+                        :typemodifiers ("private")
+                        :arguments 
+                          ( ("context" variable (:type "Context") (reparse-symbol formal_parameters) [576 591]))                          )
+                        (reparse-symbol class_member_declaration) [559 728])
+                    ("get" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("context" variable (:type "Context") (reparse-symbol formal_parameters) [761 776]))                          
+                        :type "RSSFeeds")
+                        (reparse-symbol class_member_declaration) [734 901])
+                    ("addRSSFeed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("rssFeed" variable (:type "RSSFeed") (reparse-symbol formal_parameters) [930 945]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [907 1072])
+                    ("updateRSSFeed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("rssFeed" variable (:type "RSSFeed") (reparse-symbol formal_parameters) [1104 1119]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1078 1392])
+                    ("deleteRSSFeed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("uuid" variable (:type "UUID") (reparse-symbol formal_parameters) [1424 1433]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1398 1626])
+                    ("queryRSSFeedsTable" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("whereClause" variable (:type "String") (reparse-symbol formal_parameters) [1680 1698])
+                            ("whereArgs" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1700 1718]))                          
+                        :type "RSSFeedCursorWrapper")
+                        (reparse-symbol class_member_declaration) [1632 1919])
+                    ("getRSSFeed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "UUID") (reparse-symbol formal_parameters) [1951 1958]))                          
+                        :type "RSSFeed")
+                        (reparse-symbol class_member_declaration) [1925 2365])
+                    ("getRSSFeeds" function (:constructor-flag t) (reparse-symbol class_member_declaration) [2392 2815])
+                    ("getContentValues" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("rssFeed" variable (:type "RSSFeed") (reparse-symbol formal_parameters) [2867 2882]))                          
+                        :type "ContentValues")
+                        (reparse-symbol class_member_declaration) [2821 3174]))                  
+                :type "class")
+                nil [417 3176]))          
+      :file "RSSFeeds.java"
+      :pointmax 3177
+      :fsize 3176
+      :lastmodtime '(22992 27682 321588 567000)
+      :unmatched-syntax '((GT 2390 . 2391) (PUBLIC 2371 . 2377) (LT 2382 . 2383))))
+  :file "!home!neil!programs!Android_Programs!TheNewz!app!src!main!java!freesoftsolutions!co!in!thenewz!model!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

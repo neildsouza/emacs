@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("main.java" package nil nil [1 19])
+            ("java.util.ArrayList" include nil nil [21 48])
+            ("Test" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [96 109]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [72 306]))                  
+                :type "class")
+                nil [50 308]))          
+      :file "Test.java"
+      :pointmax 309
+      :fsize 296
+      :lastmodtime '(23038 38309 220997 737000)
+      :unmatched-syntax nil))
+  :file "!home!neil!programs!java_progs!TestProj!src!main!java!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
